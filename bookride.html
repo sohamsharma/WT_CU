@@ -1,0 +1,109 @@
+<html>
+    <head>
+    <title>Book Rides- VroomCar</title>
+        <script>
+        function a()
+            {
+                alert("This Field is Mandatory");
+            }
+        function mouseDown()
+            {
+                alert("This Field is Mandatory");
+            }
+        function myFunction()
+            {
+                document.getElementById("sample").style.backgroundColor = "darkorange";
+            }
+        function load()
+            {
+                alert("Book Rides Here!");
+            }
+        function b()
+            {
+                alert("Maximum 120 Characters Allowed");
+            }
+        function c()
+            {
+                alert("Thanks for the Input");
+            }
+        function d()
+            {
+                alert("The form was Reset!");
+            }
+        </script>
+        <style>
+        h1{
+            color: darkorange;
+            text-align: center;
+            }
+        body{
+             background-color: beige;
+            }
+        form{
+            text-align: center;
+            }
+        legend{
+            text-align: center;    
+            }
+        div.relative {
+             position: relative;
+             left: 5px;
+             right: 20px;
+             top: 20px;
+             border: 3px solid #FF8C00;
+             }
+        </style>
+    </head>
+    <body onload="load()">
+        <div class="relative">
+        <h1>Book Rides</h1>
+        <hr>
+        <br>
+        <fieldset>
+            <legend>Fill all the required fields:</legend>
+        <form onreset="d()"  onsubmit="c()">
+        <br>
+         First name:<br>
+        <input type="text" name="firstname" onclick="a()" onmouseover="a()"><br><br>
+         Last name:<br>
+        <input type="text" name="lastname" onmousedown="mouseDown()" ><br><br>
+         Gender:<br>
+         Male
+        <input type="radio" name="male" >
+         Female
+        <input type="radio" name="male" ><br><br>
+         Address:<br>
+        <textarea rows="3" cols="30" onkeyup="b()" ondblclick="b()"></textarea><br><br>
+         Features:<br>
+         Airconditioner
+        <input type="checkbox" name="ac">
+         Music System
+        <input type="checkbox" name="music">
+         Parking Assistance
+        <input type="checkbox" name="parking"><br><br>
+         Mobile Number:<br>
+        <input type="text" name="phone" id="sample" onkeydown="myFunction()"  title="Mobile Number"><br><br>
+         Select Vehicle:<br>
+        <select multiple>
+        <option value="Mini">Mini</option>
+        <option value="Micro">Micro</option>
+        <option value="Sedan">Sedan</option>
+        <option value="SUV">SUV</option>
+        <option value="Luxury">Luxury</option>
+        </select>
+        <br>
+        <br>
+         Otp:
+        <input type="password" name="otp">
+        <br>
+        <br>
+         Upload Driving License:
+        <input type="file" name="fileupload" value="fileupload" id="fileupload">
+        <br>
+        <br><input type="submit" value="Submit">
+        <input type="reset" value="Reset" >
+        </form>
+        </fieldset>
+        </div>
+        <hr>
+    </body>

@@ -1,0 +1,23 @@
+        h3{
+            color: darkorange;
+            text-align: center;
+            }
+        body{
+             background-color: beige;
+            }
+        div.relative {
+             position: relative;
+             left: 5px;
+             right: 20px;
+             top: 20px;
+             bottom: 20px;
+             border: 3px solid #FF8C00;
+             }
+
+        .mycolor2{ color: red; }
+        #mycolor1{ color: blue; }
+        .mycolor3{ color: green;}
+        div.coolstuff{
+            font-family: cursive;
+             }
+        #mycolor4{ color: darkkhaki; }
